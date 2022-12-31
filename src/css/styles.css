@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: #f8f7fd;
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* HomePage */
+
+.homepage-sub-container {
+  padding: 30px 70px;
+}
+
+@media only screen and (max-width: 600px) {
+  .homepage-sub-container {
+    padding: 20px 30px;
+  }
+}
+
+/* SearchBar */
+
+.search-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .search-bar-container {
+    flex-direction: column;
+  }
+
+  .search-bar-container > h1 {
+    font-size: 20px;
+  }
+}
+
+/* PropertyFilters */
+
+.property-filter-containers {
+  background-color: #fffefe;
+  margin: 30px 0;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.property-filter-containers > * {
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 750px) {
+  .property-filter-containers {
+    flex-wrap: wrap;
+  }
+}
